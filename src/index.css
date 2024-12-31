@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Atomic+Age&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+.slider-content {
+  display: flex;
+  animation: slide 10s linear infinite;
+}
+.slider-item {
+  text-align: center;
+  padding: 0 20px;
+  font-size: 24px;
+}
+@keyframes slide {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
